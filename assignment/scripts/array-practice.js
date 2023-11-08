@@ -109,7 +109,10 @@ console.log('The animals are now', animalArray);
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
-
+let takeColor = colors.shift();
+console.log('removed first color', takeColor);
+let firstColor = 'orange';
+console.log('first color is', firstColor);
 
 
 
@@ -119,10 +122,16 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+gems.splice(1, 1, 'Tourmaline');
+console.log(gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
+gems.sort();
+console.log('in alphabetical order', gems);
+reversedGems = gems.reverse();
+console.log('in reverse alphabetical order', reversedGems);
+
 
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
